@@ -143,6 +143,7 @@ And then start the server
 ```
 flask run
 ```
+If working on a desktop monitor the webinterface is very well suited for zooming a bit out. 80% zoom is the goldilock-zone. Buttons are better fitted, text is smaller etc. 
 
 ## Running Webots
 To run Webots in the streaming mode, you need to start it with the **--stream** option. \
@@ -160,6 +161,15 @@ or on Mac:
 
 Finally, open the world file **delivery-missionUpdated.wbt** located at *Wirom2.0/backend/worlds/delivery-missionUpdated.wbt*
 
+
+
+Problems with "pip":
+When starting WeBots you might encounter an ModueNotFoundError which mentiones "No module named 'pika'". To download this module:
+In Powershell:
+cd '.\Program Files\Python39\Scripts\'
+pip install requests
+pip install pika
+More Info: https://pypi.org/project/requests/
 
 ## Exiting the processes
 To stop any of the processes running, simply press **"Ctrl + c"** for Windows or **"control + c"** for Mac in their respective terminal windows.
